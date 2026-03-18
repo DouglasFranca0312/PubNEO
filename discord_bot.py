@@ -22,7 +22,6 @@ async def SELECT(ctx, date = 0, *, name):
     if int(date) > 100:
         name = str(date) + " " + name
         date = 0
-        print(name)
     
     neos = neo_processing.select(name, date)
 
